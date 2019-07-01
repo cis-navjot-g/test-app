@@ -9,7 +9,7 @@ addons:
 install:
   - pip install -r requirements.txt
   - ln -s src pybitmessage  # tests environment
-  - python setup.py install
+  - python setup.py install --user
 script:
   - python checkdeps.py
   - src/bitmessagemain.py -t
